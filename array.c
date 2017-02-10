@@ -1,6 +1,6 @@
 /*
     This file is part of archiver project
-    Copyright © 2017  Feshchukov Aristarh <fe.arik@yandex.ru>
+    Copyright Â© 2017  Feshchukov Aristarh <fe.arik@yandex.ru>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -110,13 +110,13 @@ void _stdcall sortArray()
         unsigned index=0;
         for(;;)
         {
-            if(2*index+1<=i)
+            if(2*index+1<i)
             {
                 offsetInArray=(2*index+1)/(1<<30);
                 offsetInFile=(2*index+1)%(1<<30)*sizeof(int);
                 fseek(arrayFile[offsetInArray],offsetInFile,SEEK_SET);
                 fread(&buff1,sizeof(int),1,arrayFile[offsetInArray]);
-                if(2*index+2<=i)
+                if(2*index+2<i)
                 {
                     offsetInArray=(2*index+2)/(1<<30);
                     offsetInFile=(2*index+2)%(1<<30)*sizeof(int);
